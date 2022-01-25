@@ -1,0 +1,11 @@
+[flake8]
+ignore = W503, E203, E221, C901, D104, D100, D208, D105, D205, D215, D415, D212, D200
+max-line-length = 120
+# https://flake8.pycqa.org/en/latest/user/options.html#cmdoption-flake8-max-complexity
+# https://en.wikipedia.org/wiki/Cyclomatic_complexity
+max-complexity = 18
+# https://flake8.pycqa.org/en/latest/user/options.html#cmdoption-flake8-select
+select = B,C,E,F,W,T4,B9,D
+docstring-convention=google
+exclude = build,__init__.py
+per-file-ignores = tests/*: D103
